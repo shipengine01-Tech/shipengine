@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShipEngine • Warehouse Management Software for 3PLs & Growing Businesses</title>
+  <meta name="description" content="ShipEngine is modern warehouse management & order fulfilment software for 3PLs. Multi-tenant, cloud-based fulfilment platform: inventory, orders, picking, packing, courier labels and automated billing." />
+  <meta name="keywords" content="warehouse management software, 3PL software, fulfilment software, order fulfilment system, multi-tenant warehouse software, business management software, inventory management" />
+  <link rel="canonical" href="https://www.shipengine.co.za/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="ShipEngine • Warehouse Management Software for 3PLs" />
+  <meta property="og:description" content="Modern cloud-based fulfilment software built for 3PLs and online sellers. Inventory, orders, picking, packing, courier integrations and billing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.shipengine.co.za/" />
+  <meta property="og:image" content="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%' height='100%' fill='%232D9CDB'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Poppins,Arial' font-size='56' fill='white'>ShipEngine</text></svg>" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect rx='12' width='100%25' height='100%25' fill='%233B82F6'/><text x='50%25' y='50%25' font-size='26' font-family='Poppins, Arial' text-anchor='middle' dominant-baseline='middle' fill='white'>SE</text></svg>">
+
+  <!-- Structured Data: SoftwareApplication + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ShipEngine",
+    "headline": "Warehouse Management & Order Fulfilment Software for 3PLs",
+    "description": "Cloud-based multi-tenant warehouse management software and fulfilment platform. Inventory, orders, picking, packing, courier integration and billing for 3PLs and e-commerce businesses.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://www.shipengine.co.za/",
+    "provider": {
+      "@type": "Organization",
+      "name": "ShipEngine",
+      "url": "https://www.shipengine.co.za"
+    }
+  }
+  </script>
+
+  <!-- Styles (self-contained) -->
+  <style>
+    /* Playful palette */
+    :root{
+      --electric-blue:#2D9CDB;
+      --hot-pink:#EB5757;
+      --lime:#6FCF97;
+      --soft-purple:#9B51E0;
+      --glass: rgba(255,255,255,0.84);
+      --muted: #0f1724;
+      --bg: linear-gradient(135deg,#FFE29F 0%, #FF8FB3 40%, #8FD3FE 100%);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Poppins", "Inter", Arial, sans-serif;
+      background: var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      color:var(--muted);
+      line-height:1.45;
+    }
+
+    /* Page layout */
+    .site{
+      display:flex;
+      min-height:100vh;
+      flex-direction:column;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:20px clamp(18px,4vw,48px);
+      backdrop-filter: blur(6px);
+    }
+    /* Word-logo (SVG inline) */
+    .logo {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:var(--soft-purple);
+      font-weight:800;
+      font-size:22px;
+      letter-spacing:-0.4px;
+    }
+    .logo svg{height:42px;width:auto}
+
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{
+      text-decoration:none;
+      color:white;
+      font-weight:700;
+      padding:8px 12px;
+      border-radius:8px;
+      transition:transform .18s ease, background .18s ease;
+      font-size:14px;
+      opacity:0.96;
+    }
+    nav a.primary{
+      background: white;
+      color:var(--hot-pink);
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    }
+    nav a.ghost{background:transparent;opacity:0.95}
+
+    /* Hero */
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr 460px;
+      gap:32px;
+      align-items:center;
+      padding: clamp(28px,6vw,80px);
+      max-width:1200px;
+      margin: 0 auto;
+      width:100%;
+    }
+    .hero-left{padding:18px}
+    h1{
+      margin:0 0 18px 0;
+      font-size: clamp(34px,6.2vw,56px);
+      color:white;
+      line-height:1.02;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      font-weight:900;
+    }
+    .lead{
+      color:rgba(255,255,255,0.95);
+      margin-bottom:22px;
+      font-size:18px;
+      max-width:56ch;
+      font-weight:600;
+    }
+    .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      border-radius:999px;padding:13px 20px;font-weight:800;
+      border:0;cursor:pointer;font-size:15px;
+      transition: transform .16s ease, box-shadow .16s ease;
+      box-shadow:0 8px 24px rgba(0,0,0,0.10);
+    }
+    .btn.primary{background:var(--soft-purple);color:white}
+    .btn.ghost{background:rgba(255,255,255,0.94); color:var(--soft-purple)}
+    .btn:hover{transform:translateY(-3px)}
+
+    /* Hero visual card */
+    .visual{
+      background: linear-gradient(180deg, rgba(255,255,255,0.88), rgba(255,255,255,0.75));
+      padding:18px;border-radius:18px;
+      box-shadow: 0 18px 50px rgba(17,24,39,0.18);
+    }
+    .visual-inner{
+      height:360px;border-radius:12px;overflow:hidden; display:flex;flex-direction:column;
+      align-items:stretch;
+      background:linear-gradient(135deg,var(--electric-blue),var(--lime));
+      position:relative;
+    }
+    .visual .ui-sample{
+      padding:18px;display:flex;gap:12px;flex-direction:column;height:100%;
+    }
+    .sample-row{display:flex;gap:12px;align-items:center}
+    .card-mini{flex:1;background:rgba(255,255,255,0.85);padding:8px;border-radius:10px;font-weight:700;color:var(--muted);font-size:13px}
+    .big-panel{flex:1.7;background:rgba(255,255,255,0.95);border-radius:12px;padding:12px}
+    .blob{
+      position:absolute;right:-80px;bottom:-40px;width:320px;height:320px;border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, rgba(155,81,224,0.45), transparent 40%),
+                  radial-gradient(circle at 70% 70%, rgba(235,87,87,0.25), transparent 30%);
+      filter: blur(30px); transform:rotate(10deg);
+    }
+
+    /* Features grid */
+    .features{
+      max-width:1200px;margin: 10px auto 0 auto;padding:40px clamp(18px,4vw,48px);
+      display:grid;grid-template-columns: repeat(3,1fr); gap:18px;
+    }
+    .feature{
+      background:var(--glass);padding:22px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+    .feature h3{margin:0 0 10px;color:var(--soft-purple)}
+    .feature p{margin:0;color:#233246;font-weight:600}
+
+    /* Benefits / content sections */
+    .section{
+      max-width:1200px;margin: 12px auto;padding:34px clamp(18px,4vw,48px);
+      background: rgba(255,255,255,0.68);
+      border-radius:14px;
+      box-shadow:0 18px 40px rgba(0,0,0,0.06);
+    }
+    .section h2{margin-top:0;color:var(--muted)}
+    .columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .list{margin:0;padding-left:18px;color:#24333f;font-weight:600}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:18px;flex-wrap:wrap}
+    .testimonial{flex:1;min-width:240px;background:rgba(255,255,255,0.9);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+    .testimonial p{margin:0 0 8px;font-weight:600;color:#123}
+
+    /* Pricing quick */
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .price-card{background:var(--glass);padding:18px;border-radius:12px;text-align:center}
+    .price-card h3{margin:6px 0;color:var(--soft-purple)}
+    .price-amount{font-size:28px;font-weight:900;color:var(--muted)}
+
+    footer{padding:28px; text-align:center;color:rgba(255,255,255,0.95)}
+    .footer-links{display:flex;gap:12px;justify-content:center;padding:8px;margin-bottom:6px}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr; padding-top:40px}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .columns{grid-template-columns:1fr}
+      .pricing-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      nav{display:none}
+      .logo{font-size:18px}
+      .features{grid-template-columns:1fr}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <a class="logo" href="/">
+        <!-- Word-only SVG logo -->
+        <svg viewBox="0 0 260 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#9B51E0"/>
+              <stop offset="1" stop-color="#2D9CDB"/>
+            </linearGradient>
+          </defs>
+          <text x="0" y="36" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="800" fill="url(#g1)">ShipEngine</text>
+        </svg>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <a href="#features" class="ghost">Features</a>
+        <a href="#pricing" class="ghost">Pricing</a>
+        <a href="https://app.shipengine.co.za" class="primary">Open App</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-left">
+          <h1 id="hero-heading">The Modern Warehouse & Fulfilment Software Built for Growing 3PLs</h1>
+          <p class="lead">Run your warehouse, fulfil orders, track inventory, manage clients and automate billing — all from one simple, powerful platform built for 3PLs and e-commerce businesses.</p>
+
+          <div class="hero-ctas" role="region" aria-label="Call to action">
+            <a class="btn primary" href="https://app.shipengine.co.za">Start Free</a>
+            <a class="btn ghost" href="mailto:sales@shipengine.co.za?subject=ShipEngine%20Demo">Book a Demo</a>
+          </div>
+
+          <!-- Quick SEO paragraph for hero -->
+          <p style="margin-top:18px;max-width:62ch;color:rgba(255,255,255,0.95);font-weight:600;">
+            ShipEngine is the cloud-native <strong>warehouse management software</strong> that lets 3PLs and warehouses run faster — inventory, orders, picking, packing, courier labels and invoicing, in one place.
+          </p>
+        </div>
+
+        <aside class="visual" aria-hidden="true">
+          <div class="visual-inner" role="img" aria-label="App preview">
+            <div class="ui-sample">
+              <div class="sample-row">
+                <div class="card-mini">Orders • 142</div>
+                <div class="card-mini">Picked • 38</div>
+              </div>
+
+              <div class="sample-row" style="margin-top:10px">
+                <div class="big-panel">
+                  <div style="display:flex;justify-content:space-between;align-items:center">
+                    <strong>Pick list #212</strong>
+                    <small style="color:#5B6B7A;font-weight:700">Batch: FastShip</small>
+                  </div>
+                  <ul style="margin-top:12px;padding-left:14px;color:#23313f;font-weight:700">
+                    <li>SKU-1001 — 12 pcs — A1-02</li>
+                    <li>SKU-3045 — 4 pcs — B3-07</li>
+                    <li>SKU-9870 — 6 pcs — C2-12</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sample-row" style="margin-top:auto">
+                <div class="card-mini">Courier: Aramex</div>
+                <div class="card-mini">Label: Ready</div>
+              </div>
+            </div>
+
+            <div class="blob" aria-hidden="true"></div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Features grid -->
+      <section class="features" id="features" aria-labelledby="features-heading">
+        <div class="feature" role="article">
+          <h3>Multi-Tenant by Design</h3>
+          <p>Each client gets a secure company workspace, user roles and custom billing — perfect for modern 3PLs.</p>
+        </div>
+        <div class="feature" role="article">
+          <h3>Inventory & Stock Control</h3>
+          <p>Real-time inventory, bin locations, stock adjustments and accurate stock counts.</p>
+        </div>
+        <div class="feature" role="article">
+          <h3>Pick, Pack & Dispatch</h3>
+          <p>Tablet-friendly picking flows, packing slips, manifesting and courier label support (API or manual).</p>
+        </div>
+        <div class="feature" role="article">
+          <h3>Courier Integrations</h3>
+          <p>Built to connect: Aramex, Fastway, The Courier Guy and more — generate labels, track parcels, store PODs.</p>
+        </div>
+        <div class="feature" role="article">
+          <h3>Billing & Reporting</h3>
+          <p>Automated invoicing per order or storage, exportable financial reports and audit-ready statements.</p>
+        </div>
+        <div class="feature" role="article">
+          <h3>APIs & CSV Uploads</h3>
+          <p>Bulk order import via CSV, developer-friendly API keys for advanced integrations, and webhook notifications.</p>
+        </div>
+      </section>
+
+      <!-- Long-form content: SEO-rich sections -->
+      <article class="section" aria-labelledby="what-heading">
+        <h2 id="what-heading">What Is ShipEngine?</h2>
+        <p>
+          <strong>ShipEngine is a cloud-based warehouse and order fulfilment system</strong> designed for 3PLs, couriers, warehouses and online sellers that want simple, reliable software without complex enterprise setups.
+          ShipEngine combines the power of a warehouse management system (WMS) with user-friendly business management software — inventory, orders, automation and billing in a single dashboard.
+        </p>
+
+        <div class="columns" style="margin-top:18px">
+          <div>
+            <h3>Warehouse Management</h3>
+            <p class="list">Real-time stock, location/bin management, receiving with ASN support and efficient put-away for faster fulfilment.</p>
+            <h3 style="margin-top:16px">Fulfilment Automation</h3>
+            <p class="list">Auto-route orders to warehouses, auto-select courier by rules, print labels in bulk, and automatically notify customers with tracking links.</p>
+          </div>
+          <div>
+            <h3>Business & Asset Management</h3>
+            <p class="list">Track warehouse assets, maintain equipment, manage staff roles and approvals, with basic HR controls for operational teams.</p>
+            <h3 style="margin-top:16px">Client Billing</h3>
+            <p class="list">Flexible billing models — per order, per item, storage fees — and monthly statements that make accounting simple.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pricing -->
+      <section id="pricing" class="section" aria-labelledby="pricing-heading">
+        <h2 id="pricing-heading">Simple Pricing (starting)</h2>
+        <p style="margin-top:6px">Transparent pricing for 3PLs and growing brands — pay as you grow, no surprises.</p>
+
+        <div class="pricing-grid" style="margin-top:18px">
+          <div class="price-card">
+            <h3>Starter</h3>
+            <div class="price-amount">R499<span style="font-size:14px;font-weight:700">/mo</span></div>
+            <p>Best for single-warehouse sellers. Basic inventory, orders, CSV imports.</p>
+          </div>
+          <div class="price-card">
+            <h3>Growth</h3>
+            <div class="price-amount">R1,499<span style="font-size:14px;font-weight:700">/mo</span></div>
+            <p>Multi-tenant tools, courier integrations, automation rules and billing.</p>
+          </div>
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <div class="price-amount">Custom</div>
+            <p>White-label, SLA, dedicated onboarding, APIs & custom integrations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials & social proof -->
+      <section class="section" aria-labelledby="test-heading">
+        <h2 id="test-heading">What our customers say</h2>
+        <div class="testimonials" style="margin-top:12px">
+          <div class="testimonial">
+            <p>“The best 3PL software we've ever used. Clean, fast, and actually made for real warehouses.”</p>
+            <strong style="font-size:13px;color:#334">— Adriaan, Fulfilment Centre Owner</strong>
+          </div>
+          <div class="testimonial">
+            <p>“We replaced our old WMS with ShipEngine and cut our picking time in half.”</p>
+            <strong style="font-size:13px;color:#334">— Megan, E-Commerce Ops Manager</strong>
+          </div>
+          <div class="testimonial">
+            <p>“Multi-tenant features let us manage all our clients from one dashboard — billing is finally simple.”</p>
+            <strong style="font-size:13px;color:#334">— Themba, 3PL Operations</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ (good for SEO rich snippets) -->
+      <section class="section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+
+        <details style="margin-bottom:10px" open>
+          <summary style="font-weight:800;cursor:pointer">What is warehouse management software?</summary>
+          <div style="margin-top:8px">
+            Warehouse management software (WMS) helps businesses control inventory, receiving, put-away, picking, packing and shipping operations. ShipEngine combines WMS features with fulfilment and billing tools for 3PLs.
+          </div>
+        </details>
+
+        <details style="margin-bottom:10px">
+          <summary style="font-weight:800;cursor:pointer">Does ShipEngine support multiple clients (multi-tenant)?</summary>
+          <div style="margin-top:8px">
+            Yes. ShipEngine is built multi-tenant — each company has its own secure workspace, users, warehouses and billing settings.
+          </div>
+        </details>
+
+        <details style="margin-bottom:10px">
+          <summary style="font-weight:800;cursor:pointer">Can I generate courier labels automatically?</summary>
+          <div style="margin-top:8px">
+            Where courier APIs are available we integrate to create labels and tracking automatically. For couriers without an API, ShipEngine supports manual label upload and scanning workflows.
+          </div>
+        </details>
+
+        <details style="margin-bottom:10px">
+          <summary style="font-weight:800;cursor:pointer">How do I get started?</summary>
+          <div style="margin-top:8px">
+            Click <a href="https://app.shipengine.co.za" style="font-weight:800;color:var(--soft-purple)">Start Free</a> or email <a href="mailto:sales@shipengine.co.za">sales@shipengine.co.za</a> to book a demo and migration plan.
+          </div>
+        </details>
+      </section>
+
+    </main>
+
+    <!-- CTA band -->
+    <section style="padding:20px;background:linear-gradient(90deg,rgba(255,255,255,0.86),rgba(255,255,255,0.8));margin:18px 24px;border-radius:12px;max-width:1200px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div>
+        <strong style="font-size:18px;color:var(--muted)">Ready to simplify fulfilment?</strong>
+        <div style="color:#34495e;font-weight:700">Start a free trial or schedule a demo with our onboarding team.</div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="btn primary" href="https://app.shipengine.co.za">Start Free</a>
+        <a class="btn ghost" href="mailto:sales@shipengine.co.za">Book Demo</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <a href="/privacy" style="color:white;font-weight:700">Privacy</a>
+        <a href="/terms" style="color:white;font-weight:700">Terms</a>
+        <a href="mailto:support@shipengine.co.za" style="color:white;font-weight:700">Support</a>
+      </div>
+      <div style="font-size:13px;opacity:0.95">© <span id="year"></span> ShipEngine • Warehouse Management & Fulfilment Software</div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Insert current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple accessibility: keyboard focus for details
+    document.querySelectorAll('details summary').forEach(s => {
+      s.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' ') { s.parentElement.open = !s.parentElement.open; e.preventDefault(); } });
+    });
+
+    // Tiny performance improvement: preconnect common hosts (if later you add CDN)
+    const pc = document.createElement('link'); pc.rel='preconnect'; pc.href='https://app.shipengine.co.za'; document.head.appendChild(pc);
+  </script>
+</body>
+</html>
